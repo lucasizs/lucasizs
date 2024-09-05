@@ -39,4 +39,27 @@ vazio laço() {
 
 serial.imprimir(ultrassõnico.alcance(
 
-se(ultrassõnico.alcance(CM) <= distan
+se(ultrassõnico.alcance(CM) <= distar
+andar(5);
+inteirostatus =radar();
+atraso(500);
+se(estado ==1) {
+andar(2);
+atraso(600);
+andar(4);
+atraso(400);
+andar(5);
+}
+se(estado ==2) {
+andar(2);
+atraso(600);
+andar(3);
+atraso(400);
+andar(5);
+}
+se(estado ==2) {
+andar(2);
+atraso(600);
+andar(3);
+atraso(400);
+andar(5);
