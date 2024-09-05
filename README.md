@@ -1,16 +1,42 @@
-## Hi there 👋
+#incluir <ultrassônico.h>
+#incluir <servo.h>
+#incluir 'notas_musicais.h'
 
-<!--
-**lucasizs/lucasizs** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+#definir pinoservo 7 
+#definir trigonometria 2
+#definir eco 3
+#definir b1a 8
+#definir b1b 9
+#definir a1a 10
+#definir aib 11
 
-Here are some ideas to get you started:
+inteirodistanciad;
+inteirodistanciae;
+inteiropino de campainha =6;
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+flutuadordistanciaobstaculo -36;
+
+ultrassônicoultrassõnico(trig, eco);
+
+servo servo; 
+
+vazio configurar() {
+serial.começar(9600);
+
+servo.anexar(pinoservo);
+
+modo pin(b1a, saida);
+modo pin(b1b, saida);
+modo pin(a1a, saida);
+modo pin(a1b, saida);
+modo pin(buzzerpin, saida);
+
+servo.escrever(90);
+
+}
+
+vazio laço() {
+
+serial.imprimir(ultrassõnico.alcance(
+
+se(ultrassõnico.alcance(CM) <= distan
